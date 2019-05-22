@@ -127,6 +127,7 @@
             this.btnClearScores.TabIndex = 9;
             this.btnClearScores.Text = "Clear scores";
             this.btnClearScores.UseVisualStyleBackColor = true;
+            this.btnClearScores.Click += new System.EventHandler(this.BtnClearScores_Click);
             // 
             // btnExit
             // 

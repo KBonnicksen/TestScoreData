@@ -21,7 +21,7 @@ namespace TestScoreData
 
         private void Button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
@@ -61,6 +61,14 @@ namespace TestScoreData
         {
             string toDisplay = string.Join(Environment.NewLine, scores);
             MessageBox.Show(toDisplay, "Sorted Scores");
+        }
+
+        private void BtnClearScores_Click(object sender, EventArgs e)
+        {
+            scores.Clear();
+            txtScoreTotal.Clear();
+            txtScoreCount.Clear();
+            txtAverage.Clear();
         }
     }
 }
